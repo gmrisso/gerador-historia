@@ -13,7 +13,33 @@ body {
 h1{
 	width:20em;
 	font-size:1.5em;
-	margin:2em auto;
+	margin:0.7em auto;
+}
+
+#login{
+	margin:50px auto;
+	padding:0.7em;
+	width:500px;
+	background:#faf379;
+	box-shadow: 0 4px 8px 0 #3030ff;
+}
+
+.btLogin{
+	margin:0.3em 0 1em 0.5em;
+	padding:0.3em;
+	font-size:1.2em;
+	font-weight:bold;
+	background: #ff9933;
+	color: #fff;
+	border:none;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	border-radius:5px;
+}
+		
+.btLogin:hover {
+  background-color: #ffcc33;
 }
 
 #cards-box, #cards{
@@ -21,12 +47,16 @@ h1{
 	height:200px;
 	margin:20px auto;
 	padding:10px;
-	border:1px solid red;
 	
 	display:flex;
 	flex-wrap:nowrap;
 	justify-content:space-around;
 	align-items:center;
+}
+
+#cards-box{
+	background:#faf353;
+	box-shadow: 0 4px 8px 0 #3030ff;
 }
 
 #cards{
@@ -36,7 +66,6 @@ h1{
 .card{
 	width:180px;
 	height:150px;
-	border:1px solid red;
 	padding:10px;
 	background:#faf379;
 	font-family:"Comic Sans MS", cursive, sans-serif;
@@ -68,7 +97,9 @@ h1{
 	height:270px;
 	margin:20px auto;
 	padding:10px;
-	border:1px solid red;
+	
+	background:#faf379;
+	box-shadow: 0 4px 8px 0 #3030ff;
 }
 	  
 .input{
@@ -171,14 +202,23 @@ button:active {
 	width:900px;
 	margin:20px auto;
 	padding:10px;
-	border:1px solid red;
 	font-family:Verdana, Geneva, sans-serif;
+	
+	background:#faf379;
+	box-shadow: 0 4px 8px 0 #3030ff;
 }
 
-#text-box{
+.text-box{
 	margin:10px auto;
 	padding:5px;
 	border:1px solid red;
+}
+
+#status{
+	text-align: right;
+	font-size:0.8em;
+	font-weight:bold;
+	--border:1px solid red;	
 }
 
 #text-keywords{
@@ -190,7 +230,7 @@ button:active {
 	font-size:1.3em;
 	font-weight: bold;
 	text-decoration:underline;	
-	padding:0.5em 0 0 1em;
+	padding:0.5em 0;
 }
 
 #delivered-text{
@@ -200,6 +240,6 @@ button:active {
 
 #text-author{
 	font-size:0.8em;
-	font-weight: bold;
-	padding:0.5em;
+	font-weight:bold;
+	padding:0.5em 0;
 }
