@@ -1,0 +1,147 @@
+html,
+body {
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family:Verdana, Geneva, sans-serif;
+	background:#fafa99;
+	color:#333333;
+}
+	
+h1{
+	width:20em;
+	font-size:1.5em;
+	margin:0.7em auto;
+}
+
+#room{
+	margin:50px auto;
+	padding:0.7em;
+	width:300px;
+	background:#faf379;
+	box-shadow: 0 4px 8px 0 #3030ff;
+}
+	
+#editor{
+	width:900px;
+	height:330px;
+	margin:20px auto;
+	padding:10px;
+	
+	background:#faf379;
+	box-shadow: 0 4px 8px 0 #3030ff;
+}
+	  
+.input{
+	width:850px;
+	height:150px;
+	margin:0 auto;
+	padding:10px;
+	border:none;
+	outline:none;
+	font-size:1.2em;
+}
+
+.inputTitle{
+	width:850px;
+	margin:0 auto 0.3em;
+	padding:10px;
+	border:none;
+	outline:none;
+	font-size:1.3em;
+}
+
+.inputAuthor{
+	width:300px;
+	margin:1em 0 0 1em;
+	padding:6px;
+	border:none;
+	outline:none;
+	font-size:0.8em;
+}
+
+.inputRoom{
+	width:180px;
+	margin:1em 0 0 1.75em;
+	padding:6px;
+	border:none;
+	outline:none;
+	font-size:0.8em;
+}
+
+::placeholder{
+	font-family:Arial, helvetica, sans-serif;
+	border-style:none;
+	padding:0.2em;	
+}
+	
+button:active {
+	top: 1px;
+	box-shadow: none;
+}
+
+.add{
+	margin:0.3em 0 1em 0;
+	padding:0.3em;
+	font-size:1.2em;
+	font-weight:bold;
+	background: #ff9933;
+	color: #fff;
+	border:none;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	border-radius:5px;
+}
+		
+.add:hover {
+  background-color: #ffcc33;
+}
+
+#texts{
+	width:900px;
+	margin:20px auto;
+	padding:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	
+	background:#faf379;
+	box-shadow: 0 4px 8px 0 #3030ff;
+}
+
+.text-box{
+	margin:10px auto;
+	padding:5px;
+	border:1px solid red;
+}
+
+#status{
+	text-align: right;
+	font-size:0.8em;
+	font-weight:bold;
+	--border:1px solid red;	
+}
+
+#text-keywords{
+	font-size:0.7em;
+	font-style:italic;	
+}
+
+#text-title{
+	font-size:1.3em;
+	font-weight: bold;
+	text-decoration:underline;	
+	padding:0.5em 0;
+}
+
+#delivered-text{
+	font-size:1em;
+	padding:0.5em 0;
+}
+
+#text-author{
+	font-size:0.8em;
+	font-weight:bold;
+	padding:0.5em 0;
+}
