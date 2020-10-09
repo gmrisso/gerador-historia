@@ -189,10 +189,11 @@ export default class Main extends Component{
 		
 		return(
 			<div>
-			<h1>Gerador de histórias divertidas</h1>
+			<h1 className="h1">HISTÓRIAS ALEATÓRIAS</h1>
 			
 			<div id="room">	
-				<label className="label"><b>Sala:</b></label><input className="inputRoom" type="text" name="classRoom" value={this.state.classroom} disabled />				
+				<label className="labelRoom"><b>Sala:</b></label>
+				<input className="inputRoom" type="text" name="classRoom" value={this.state.classroom} disabled />				
 			</div>
 			
 			<div id="texts">

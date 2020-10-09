@@ -6,22 +6,53 @@ body {
 	width:100%;
 	height:100%;
 	font-family:Verdana, Geneva, sans-serif;
-	background:#fafa99;
-	color:#333333;
+	background:#ecf0f1;
+	color:#1A237E;
 }
 	
-h1{
-	width:20em;
-	font-size:1.5em;
-	margin:0.7em auto;
+.h1s{
+	width:15em;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size:2em;
+	margin:1em auto;
 }
 
 #login{
-	margin:50px auto;
-	padding:0.7em;
-	width:500px;
-	background:#faf379;
-	box-shadow: 0 4px 8px 0 #3030ff;
+	margin:3em auto;
+	padding:0.4em;
+	width:30em;
+	background:#D3D3D3;
+	box-shadow: 0 4px 8px 0 #1A237E;
+	border:1px solid #5C6BC0;
+}
+
+.inputLogin{
+	width:16em;
+	margin:0.5em;
+	padding:6px;
+	border:none;
+	outline:none;
+	font-size:1.2em;
+	background:#FAFAFA;
+	color:#1B1464;
+}
+
+.inputLogin::placeholder, .inputAuthor::placeholder,
+.inputTitle::placeholder, .input::placeholder{
+	font-family:Arial, helvetica, sans-serif;
+	border-style:none;
+	padding:0.2em;
+	font-size:1em;	
+	background:#FAFAFA;
+	color:#1B1464;
+}
+
+.labelLogin{
+	margin:0.3em;
+	padding:6px;
+	border:none;
+	outline:none;
+	font-size:1em
 }
 
 .btLogin{
@@ -55,7 +86,7 @@ h1{
 }
 
 #cards-box{
-	background:#faf353;
+	background:#D3D3D3;
 	box-shadow: 0 4px 8px 0 #3030ff;
 }
 
@@ -76,13 +107,30 @@ h1{
 }
 	
 .card:hover{
-	transform: rotateY(20deg) rotateX(-20deg);
+	transform: rotateY(10deg) rotateX(-10deg);
 }
 	
 .title{
 	font-weight: bold;
 	font-style:italic;
-	text-decoration: underline;		
+	text-decoration: underline;	
+	margin-bottom:0.5em;
+}
+
+#place{
+	background:#C6FF00;
+}
+
+#persona{
+	background:#FF9800;
+}
+
+#action{
+	background:#FFFC00;
+}
+
+#complement{
+	background:#4FC3F7;
 }
 	
 .content{
@@ -94,11 +142,11 @@ h1{
 	
 #editor{
 	width:900px;
-	height:270px;
+	height:21em;
 	margin:20px auto;
 	padding:10px;
 	
-	background:#faf379;
+	background:#D3D3D3;
 	box-shadow: 0 4px 8px 0 #3030ff;
 }
 	  
@@ -109,7 +157,8 @@ h1{
 	padding:10px;
 	border:none;
 	outline:none;
-	font-size:1.2em;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:1em;
 }
 
 .inputTitle{
@@ -118,7 +167,8 @@ h1{
 	padding:10px;
 	border:none;
 	outline:none;
-	font-size:1.3em;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:1.2em;
 }
 
 .inputAuthor{
@@ -127,28 +177,25 @@ h1{
 	padding:6px;
 	border:none;
 	outline:none;
-	font-size:0.8em;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:0.9em;
+	background:#FAFAFA;
+	color:#1B1464;
 }
 
 .inputRoom{
-	width:180px;
+	width:18em;
 	margin:1em 0 0 1.75em;
 	padding:6px;
 	border:none;
 	outline:none;
 	font-size:0.8em;
 }
-
-::placeholder{
-	font-family:Arial, helvetica, sans-serif;
-	border-style:none;
-	padding:0.2em;	
-}
 	  
 .btRefresh {
 	position:relative;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	margin:0;
 	padding: 0;
 	border: none;
@@ -167,8 +214,8 @@ button:active {
 }
 
 .btRefresh .icon {
-	width: 15px;
-	height: 15px;
+	width: 22px;
+	height: 22px;
 	transition: all 0.4s ease-in-out;
 }
 		
@@ -213,7 +260,7 @@ button:active {
 	padding:10px;
 	font-family:Verdana, Geneva, sans-serif;
 	
-	background:#faf379;
+	background:#D3D3D3;
 	box-shadow: 0 4px 8px 0 #3030ff;
 }
 

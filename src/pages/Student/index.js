@@ -289,23 +289,46 @@ export default class Main extends Component{
 		
 		return(
 			<div>
-			<h1>Gerador de histórias divertidas</h1>
+			<h1 className="h1s">HISTÓRIAS ALEATÓRIAS</h1>
 			
-			<div id="login">	
-				<label className="label"><b>Sala:</b></label><input className="inputRoom" type="text" placeholder="Digite o código da sala de aula" name="classRoom" required />
+			<div id="login">
+				<label className="labelLogin"><b>&nbsp;&nbsp;Sala:</b></label><input className="inputLogin" type="text" placeholder="Digite o código da sala de aula" name="classRoom" required />
 				<br/>
-				<label className="label"><b>Autor:</b></label>
-				<input className="inputAuthor" type="text" placeholder="Digite seu nome" name="username" required />
+				<label className="labelLogin"><b>Autor:</b></label>
+				<input className="inputLogin" type="text" placeholder="Digite seu nome" name="username" required />
 				<br/>				
 				<button onClick={this.login} className="btLogin">Entrar</button>	
 			</div>
 			
 			<div id="cards-box">
 				<div id="cards">
-					<div id="place" className="card w3-animate-zoom"><div className="title">Local</div><div className="content">{this.state.place}</div></div>
-					<div id="persona" className="card w3-animate-zoom"><div className="title">Personagem</div><div className="content">{this.state.persona}</div></div>
-					<div id="action" className="card w3-animate-zoom"><div className="title">Ação</div><div className="content">{this.state.action}</div></div>
-					<div id="complement" className="card w3-animate-zoom"><div className="title">Complemento</div><div className="content">{this.state.complement}</div></div>
+					<div>
+						<div className="title">Local</div>
+						<div id="place" className="card w3-animate-zoom">
+							<div className="content">{this.state.place}</div>
+						</div>
+					</div>
+					
+					<div>
+						<div className="title">Personagem</div>
+						<div id="persona" className="card w3-animate-zoom">
+							<div className="content">{this.state.persona}</div>
+						</div>
+					</div>
+					
+					<div>
+						<div className="title">Ação</div>
+						<div id="action" className="card w3-animate-zoom">
+							<div className="content">{this.state.action}</div>
+						</div>
+					</div>
+					
+					<div>
+						<div className="title">Complemento</div>
+						<div id="complement" className="card w3-animate-zoom">
+							<div className="content">{this.state.complement}</div>
+						</div>
+					</div>						
 				</div>
 				<button className="btRefresh" onClick={this.refresh}><img className="icon" src={reload} alt="Atualizar cartões" /></button>
 			</div>
