@@ -262,6 +262,27 @@ export default class Main extends Component{
 						complement:cmp.toUpperCase()});
 						
 			socket.emit('connect-student',[id,this.state.classroom]);
+
+						
+			let x = document.getElementById("place");
+			x.classList.remove("w3-animate-zoom");
+			void x.offsetWidth;
+			x.classList.add("w3-animate-zoom");
+
+			x = document.getElementById("persona");
+			x.classList.remove("w3-animate-zoom");
+			void x.offsetWidth;
+			x.classList.add("w3-animate-zoom");
+
+			x = document.getElementById("action");
+			x.classList.remove("w3-animate-zoom");
+			void x.offsetWidth;
+			x.classList.add("w3-animate-zoom");
+
+			x = document.getElementById("complement");
+			x.classList.remove("w3-animate-zoom");
+			void x.offsetWidth;
+			x.classList.add("w3-animate-zoom");
 		}
 		
 	}
@@ -304,29 +325,45 @@ export default class Main extends Component{
 				<div id="cards">
 					<div>
 						<div className="title">Local</div>
-						<div id="place" className="card w3-animate-zoom">
-							<div className="content">{this.state.place}</div>
+						<div class="card">
+							<div id="place" class="child place w3-animate-zoom">
+								<div className="content">{this.state.place}</div>
+							</div>
+							<div class="child place"></div>
+							<div class="child place"></div>
 						</div>
 					</div>
 					
 					<div>
 						<div className="title">Personagem</div>
-						<div id="persona" className="card w3-animate-zoom">
-							<div className="content">{this.state.persona}</div>
+						<div class="card">
+							<div id="persona" class="child persona w3-animate-zoom ">
+								<div className="content">{this.state.persona}</div>
+							</div>
+							<div class="child persona"></div>
+							<div class="child persona"></div>
 						</div>
 					</div>
 					
 					<div>
 						<div className="title">Ação</div>
-						<div id="action" className="card w3-animate-zoom">
-							<div className="content">{this.state.action}</div>
+						<div class="card">
+							<div id="action" class="child action w3-animate-zoom">
+								<div className="content">{this.state.action}</div>
+							</div>
+							<div class="child action"></div>
+							<div class="child action"></div>
 						</div>
 					</div>
 					
 					<div>
 						<div className="title">Complemento</div>
-						<div id="complement" className="card w3-animate-zoom">
-							<div className="content">{this.state.complement}</div>
+						<div class="card">
+							<div id="complement" class="child complement w3-animate-zoom">
+								<div className="content">{this.state.complement}</div>
+							</div>
+							<div class="child complement"></div>
+							<div class="child complement"></div>
 						</div>
 					</div>						
 				</div>
