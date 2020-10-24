@@ -109,7 +109,7 @@ export default class Main extends Component{
 	loadCards = async () =>{
 		const place = ["Circo","Cinema","Prisão","Cemitério","Deserto","Estádio de futebol","Praia","Ilha deserta","Casa mal-assombrada","Rua escura","Sorveteria","Piscina inflável","Escola","Avião","Montanha","Praça","Castelo"];
 		const persona = ["Um palhaço","Um ladrão","Uma bailarina","Dois caçadores","Um rei","Um estudante","Três crianças","Um fantasma","Pescador","Uma família","Um jogador de futebol","Um marinheiro","Um piloto de avião","Um detetive","Dois pescadores","Um professor","Um agente secreto"];
-		const action = ["Escutar Barulho estranho","Passear de bicicleta","Encontrar um livro","Estar com dor de barriga","Estar com medo","","Estar procurando algo","Dar risada","Correr atrás de alguém","Ganhar um prêmio","Receber aplausos","Colocar uma fantasia","Correr muito rápido","Chamar alguém","Perder-se","Dormir","Escutar a campainha","Ver um fantasma"];
+		const action = ["Escutar Barulho estranho","Passear de bicicleta","Encontrar um livro","Estar com dor de barriga","Estar com medo","Estar procurando algo","Dar risada","Correr atrás de alguém","Ganhar um prêmio","Receber aplausos","Colocar uma fantasia","Correr muito rápido","Chamar alguém","Perder-se","Dormir","Escutar a campainha","Ver um fantasma"];
 		const complement = ["Não há ninguém por perto","Ouvir uma voz assustadora","Um leão está por perto","Está sem os sapatos","Lembrar de algo importante","Perder a chave","Uma invenção que vai revolucionar o mundo","Avistar um barco","Está fazendo muito frio","Uma bola de futebol","Está muito calor","Uma música tocando muito alto","Uma estrela cadente","Uma garrafa de água","Um arco-íris","Encontrou uma mala cheia de dinheiro","Ouvir um som de apito"];
 
 		
@@ -250,20 +250,27 @@ export default class Main extends Component{
 	refresh = () =>{
 		
 		if(this.state.listIdeas.place){
-			let id = Math.random().toString(36).substr(2,5);
+
+			if(document.getElementsByName("title")[0].value != "" 
+			|| document.getElementsByName("story")[0].value != ""){
+				alert("Os cartões só podem ser atualizados se o título e o texto estão vazios.");
+				return;
+			}
+			
+			//let id = Math.random().toString(36).substr(2,5);
+			let id = this.state.id;
 			let plc = this.state.listIdeas.place[Math.floor(Math.random() * this.state.listIdeas.place.length)];
 			let prs = this.state.listIdeas.persona[Math.floor(Math.random() * this.state.listIdeas.persona.length)];
 			let act = this.state.listIdeas.action[Math.floor(Math.random() * this.state.listIdeas.action.length)];
 			let cmp = this.state.listIdeas.complement[Math.floor(Math.random() * this.state.listIdeas.complement.length)];
 									
-			this.setState({id,
+			this.setState({ id,
 						place:plc.toUpperCase(),
 						persona:prs.toUpperCase(),
 						action:act.toUpperCase(),
 						complement:cmp.toUpperCase()});
 						
 			socket.emit('connect-student',[id,this.state.classroom]);
-
 						
 			let x = document.getElementById("place");
 			x.classList.remove("w3-animate-zoom");
@@ -368,7 +375,7 @@ export default class Main extends Component{
 						</div>
 					</div>						
 				</div>
-				<button className="btRefresh" onClick={this.refresh}><img className="icon" src={reload} alt="Atualizar cartões" /></button>
+				<button className="btRefresh" onClick={this.refresh} title="Atualizar cartões"><img className="icon" src={reload} /></button>
 			</div>
 			<div id="editor">
 				<label className="label"><b>Sala:</b></label><input className="inputRoom" type="text" name="classRoom" value={this.state.classroom} disabled />

@@ -45,11 +45,7 @@ io.on('connection', function(socket){
 	room.setId(id,socket.id);
 	
 	school.push(room);
-	
-	for(let index in school){
-		console.log(school[index]);
-	}
-    
+	    
   })
   
   socket.on('connect-student', (component) => {
@@ -60,7 +56,7 @@ io.on('connection', function(socket){
 		
 		if(school[index].id === component[1] ){
 			school[index].student.push(student);
-			console.log('> connect student ' + school[index].student);
+			//console.log('> connect student ' + school[index].student);
 		}
 	}	
     
@@ -71,7 +67,7 @@ io.on('connection', function(socket){
 	for(let index in school){
 		
 		if(school[index].id === component[0] ){
-			console.log('> send-story ' + school[index].socketId);
+			//console.log('> send-story ' + school[index].socketId);
 			
 			io.to(school[index].socketId).emit('send-story', component);
 		}
@@ -85,7 +81,7 @@ io.on('connection', function(socket){
 		if(school[index].id === component[0] ){
 			
 			for(let index2 in school[index].student){
-				console.log('> received-story ');
+				//console.log('> received-story ');
 				io.to(school[index].student[index2][1]).emit('received-story', component);
 			}			
 			
