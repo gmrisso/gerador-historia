@@ -3,7 +3,7 @@ import openSocket from 'socket.io-client';
 
 import "./styles.css";
 
-const socket = openSocket('http://localhost:3001');
+const socket = openSocket(process.env.REACT_APP_API_URL);
 
 export default class Main extends Component{
 		
