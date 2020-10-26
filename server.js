@@ -4,13 +4,16 @@ const socketIo = require("socket.io");
 
 const port = process.env.PORT || 3001;
 
+const cors = require("cors");
 const app = express();
+app.use(cors());
+
 const server = http.createServer(app);
 const io = socketIo(server);
 
 var school = [];
 
-let maxConcurrentConnections = 30
+let maxConcurrentConnections = 30;
 
 io.on('connection', function(socket){
   /*const admin = socket.handshake.query.admin

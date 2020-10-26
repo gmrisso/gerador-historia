@@ -107,10 +107,23 @@ export default class Main extends Component{
 	}
 	
 	loadCards = async () =>{
-		const place = ["Circo","Cinema","Prisão","Cemitério","Deserto","Estádio de futebol","Praia","Ilha deserta","Casa mal-assombrada","Rua escura","Sorveteria","Piscina inflável","Escola","Avião","Montanha","Praça","Castelo"];
-		const persona = ["Um palhaço","Um ladrão","Uma bailarina","Dois caçadores","Um rei","Um estudante","Três crianças","Um fantasma","Pescador","Uma família","Um jogador de futebol","Um marinheiro","Um piloto de avião","Um detetive","Dois pescadores","Um professor","Um agente secreto"];
-		const action = ["Escutar Barulho estranho","Passear de bicicleta","Encontrar um livro","Estar com dor de barriga","Estar com medo","Estar procurando algo","Dar risada","Correr atrás de alguém","Ganhar um prêmio","Receber aplausos","Colocar uma fantasia","Correr muito rápido","Chamar alguém","Perder-se","Dormir","Escutar a campainha","Ver um fantasma"];
-		const complement = ["Não há ninguém por perto","Ouvir uma voz assustadora","Um leão está por perto","Está sem os sapatos","Lembrar de algo importante","Perder a chave","Uma invenção que vai revolucionar o mundo","Avistar um barco","Está fazendo muito frio","Uma bola de futebol","Está muito calor","Uma música tocando muito alto","Uma estrela cadente","Uma garrafa de água","Um arco-íris","Encontrou uma mala cheia de dinheiro","Ouvir um som de apito"];
+		const place = ["Circo","Cinema","Prisão","Cemitério","Deserto","Estádio de futebol","Praia","Ilha deserta",
+			"Casa mal-assombrada","Rua escura","Sorveteria","Piscina inflável","Escola","Avião","Montanha",
+			"Praça","Castelo","Lua","Um reino encantado"];
+		const persona = ["Um palhaço","Um ladrão","Uma bailarina","Dois caçadores","Um rei","Um estudante",
+			"Três crianças","Um fantasma","Pescador","Uma família","Um jogador de futebol","Um marinheiro",
+			"Um piloto de avião","Um detetive","Dois pescadores","Um professor","Um agente secreto",
+			"Um astronauta","Um cavaleiro","Uma fada","Uma bruxa"];
+		const action = ["Escutar Barulho estranho","Passear de bicicleta","Encontrar um livro","Estar com dor de barriga",
+			"Estar com medo","Estar procurando algo","Dar risada","Correr atrás de alguém",
+			"Ganhar um prêmio","Receber aplausos","Colocar uma fantasia","Correr muito rápido",
+			"Chamar alguém","Perder-se","Dormir","Escutar a campainha","Ver um fantasma",
+			"Quebrar uma maldição"];
+		const complement = ["Não há ninguém por perto","Uma voz assustadora","Um leão está por perto",
+			"Sem os sapatos","Lembrar de algo importante","Perder a chave","Uma invenção que vai revolucionar o mundo",
+			"Um barco","Muito frio","Uma bola de futebol","Muito calor","Uma música tocando muito alto",
+			"Uma estrela cadente","Uma garrafa de água","Um arco-íris","Uma mala cheia de dinheiro",
+			"Um som de apito","Um foguete","Um alienígena","Um cavalo","Uma varinha mágica","Um espelho mágico"];
 
 		
 		let list = {place,persona,action,complement};
