@@ -15,9 +15,9 @@ export default class Main extends Component{
 		
 	componentDidMount(){
 		
-		let classroom = Math.random().toString(36).substr(2,6);
+		let classroom = Math.floor((Math.random() * 8999)+1000);
 		
-		classroom = classroom.toUpperCase();
+		//classroom = classroom.toUpperCase();
 		
 		this.setState({classroom});
 		
