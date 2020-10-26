@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import openSocket from 'socket.io-client';
 
 import "./styles.css";
-import reload from './img/reload.png'; 
 
 const socket = openSocket('http://localhost:3001');
 
@@ -44,7 +43,7 @@ export default class Main extends Component{
 			}
 		}
 		
-		if (found == false){
+		if (found === false){
 			
 			LStory.push(component);
 		}		

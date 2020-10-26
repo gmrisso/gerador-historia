@@ -264,8 +264,8 @@ export default class Main extends Component{
 		
 		if(this.state.listIdeas.place){
 
-			if(document.getElementsByName("title")[0].value != "" 
-			|| document.getElementsByName("story")[0].value != ""){
+			if(document.getElementsByName("title")[0].value !== "" 
+			|| document.getElementsByName("story")[0].value !== ""){
 				alert("Os cartões só podem ser atualizados se o título e o texto estão vazios.");
 				return;
 			}
@@ -388,7 +388,7 @@ export default class Main extends Component{
 						</div>
 					</div>						
 				</div>
-				<button className="btRefresh" onClick={this.refresh} title="Atualizar cartões"><img className="icon" src={reload} /></button>
+				<button className="btRefresh" onClick={this.refresh} title="Atualizar cartões"><img alt="Atualizar cartões" className="icon" src={reload} /></button>
 			</div>
 			<div id="editor">
 				<label className="label"><b>Sala:</b></label><input className="inputRoom" type="text" name="classRoom" value={this.state.classroom} disabled />
