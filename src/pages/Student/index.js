@@ -322,6 +322,8 @@ export default class Main extends Component{
 		let author = document.getElementsByName("author")[0].value;
 		let keyCards = this.state.place + " | " + this.state.persona + " | " + this.state.action + " | " + this.state.complement;
 		let classroom = this.state.classroom;
+
+		console.log("emitindo historia");
 		
 		socket.emit('send-story', [classroom,id,keyCards,title,story,author,"Escrevendo"]) ;	
 		
