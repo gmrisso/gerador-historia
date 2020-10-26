@@ -395,8 +395,8 @@ export default class Main extends Component{
 			<div id="editor">
 				<label className="label"><b>Sala:</b></label><input className="inputRoom" type="text" name="classRoom" value={this.state.classroom} disabled />
 				<input type="hidden"  name="id" value={this.state.id} />
-				<input className="inputTitle" onKeyPress={this.keyPressed} type="text" placeholder="Titulo da história" name="title" required />
-				<textarea className="input" onKeyPress={this.keyPressed} placeholder="Crie sua história utilizando os cartões acima" name="story" required />
+				<input className="inputTitle" onChange={this.keyPressed} type="text" placeholder="Titulo da história" name="title" required />
+				<textarea className="input" onChange={this.keyPressed} placeholder="Crie sua história utilizando os cartões acima" name="story" required />
 				<br />
 				<button className="add" onClick={this.addText}>Entregar</button>
 				<input className="inputAuthor" type="text" name="author" disabled />
