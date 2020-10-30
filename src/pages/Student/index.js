@@ -346,45 +346,45 @@ export default class Main extends Component{
 				<div id="cards">
 					<div>
 						<div className="title">Local</div>
-						<div class="card">
-							<div id="place" class="child place w3-animate-zoom">
+						<div className="card">
+							<div id="place" className="child place w3-animate-zoom">
 								<div className="content">{this.state.place}</div>
 							</div>
-							<div class="child place"></div>
-							<div class="child place"></div>
+							<div className="child place"></div>
+							<div className="child place"></div>
 						</div>
 					</div>
 					
 					<div>
 						<div className="title">Personagem</div>
-						<div class="card">
-							<div id="persona" class="child persona w3-animate-zoom ">
+						<div className="card">
+							<div id="persona" className="child persona w3-animate-zoom ">
 								<div className="content">{this.state.persona}</div>
 							</div>
-							<div class="child persona"></div>
-							<div class="child persona"></div>
+							<div className="child persona"></div>
+							<div className="child persona"></div>
 						</div>
 					</div>
 					
 					<div>
 						<div className="title">Ação</div>
-						<div class="card">
-							<div id="action" class="child action w3-animate-zoom">
+						<div className="card">
+							<div id="action" className="child action w3-animate-zoom">
 								<div className="content">{this.state.action}</div>
 							</div>
-							<div class="child action"></div>
-							<div class="child action"></div>
+							<div className="child action"></div>
+							<div className="child action"></div>
 						</div>
 					</div>
 					
 					<div>
 						<div className="title">Complemento</div>
-						<div class="card">
-							<div id="complement" class="child complement w3-animate-zoom">
+						<div className="card">
+							<div id="complement" className="child complement w3-animate-zoom">
 								<div className="content">{this.state.complement}</div>
 							</div>
-							<div class="child complement"></div>
-							<div class="child complement"></div>
+							<div className="child complement"></div>
+							<div className="child complement"></div>
 						</div>
 					</div>						
 				</div>
