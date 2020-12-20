@@ -122,7 +122,7 @@ export default class Main extends Component{
 			</div>
 			
 			<div id="texts">
-			</div>
+			</div>			
 		</div>		
 		)
 	}

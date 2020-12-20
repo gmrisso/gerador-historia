@@ -92,7 +92,7 @@ body {
 
 #cards-box{
 	background:#D3D3D3;
-	box-shadow: 0 4px 8px 0 #3030ff;
+	box-shadow: 0 4px 8px 0 #3030ff;	
 }
 
 #cards{
@@ -107,19 +107,27 @@ body {
 }
 
 #place, .place{
-	background:#C6FF00;
+	--background:#84a312;
+	background-image:radial-gradient(circle,yellow,orange);
+	border:solid 2px #000;
 }
 
 #persona, .persona{
-	background:#FF9800;
+	--background:#FF9800;
+	background-image:radial-gradient(circle,lightblue,deepskyblue);
+	border:solid 2px #000;
 }
 
 #action, .action{
-	background:#FFFC00;
+	--background:#FFFC00;
+	background-image:radial-gradient(circle,palegreen,yellowgreen);
+	border:solid 2px #000;
 }
 
 #complement, .complement{
-	background:#4FC3F7;
+	--background:#4FC3F7;
+	background-image:radial-gradient(circle,lightcoral,tomato);
+	border:solid 2px #003;
 }
 
 .content{
