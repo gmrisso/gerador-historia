@@ -339,7 +339,19 @@ export default class Main extends Component{
 				<label className="labelLogin"><b>Autor:</b></label>
 				<input className="inputLogin" type="text" placeholder="Digite seu nome" name="username" required />
 				<br/>				
-				<button onClick={this.login} className="btLogin">Entrar</button>	
+				<button onClick={this.login} className="btLogin">Entrar</button>				
+			</div>
+
+			<div id = "Hist-ale-Login">
+				<ins className="adsbygoogle"
+					style={{ display: 'block' }}
+					data-ad-client="ca-pub-1303194359115679"
+					data-ad-slot="8682962739"
+					data-ad-format="auto"
+					data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</div>
 			
 			<div id="cards-box">
@@ -390,6 +402,19 @@ export default class Main extends Component{
 				</div>
 				<button className="btRefresh" onClick={this.refresh} title="Atualizar cartões"><img alt="Atualizar cartões" className="icon" src={reload} /></button>
 			</div>
+
+			<div id = "hist-ale-student1">
+				<ins className="adsbygoogle"
+					style={{ display: 'block' }}
+					data-ad-client="ca-pub-1303194359115679"
+					data-ad-slot="7483214094"
+					data-ad-format="auto"
+					data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+
 			<div id="editor">
 				<label className="label"><b>Sala:</b></label><input className="inputRoom" type="text" name="classRoom" value={this.state.classroom} disabled />
 				<input type="hidden"  name="id" value={this.state.id} />
@@ -399,6 +424,19 @@ export default class Main extends Component{
 				<button className="add" onClick={this.addText}>Entregar</button>
 				<input className="inputAuthor" type="text" name="author" disabled />
 			</div>
+
+			<div id = "hist-ale-student2">
+				<ins className="adsbygoogle"
+					style={{ display: 'block' }}
+					data-ad-client="ca-pub-1303194359115679"
+					data-ad-slot="1712206185"
+					data-ad-format="auto"
+					data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+
 			<div id="texts">
 			</div>
 		</div>		
