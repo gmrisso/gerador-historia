@@ -24,22 +24,22 @@ I'm programmer and system's analist and work at Brazilian company. My Linkedin p
 </p>
 <p><i>Story generator is a project that aims to develop reading and textual production in a playful and creative way.
 <br/>
-It consists of a page for the student, in which he informs his name and the number of the room generated on the teacher's page. Four random cards are drawn for him to produce a text. At the end, you can send the task.
+It consists of a page for the students, in which they informs his name and the number of the room generated on the teacher's page. Four random cards are drawn for him to produce a text. At the end, you can send the task.
   </i></p>
 <img alt="student" title="student page" src="public/history-student.png" width="80%" />
 
 <p>A página do professor apresenta um número de sala, o qual os estudantes devem informar na sua identificação. Nessa página, podem ser acompanhados os textos que estão sendo produzidos em tempo real ou entregues. 
 </p>
-<p><i>The teacher's page has a room number, which the students must inform in their identification. On this page, the texts that are being produced in real time or delivered can be followed.
+<p><i>The teacher's page has a room number, which the students must inform in their identification. On this page, the texts that are being produced in real time or sended can be accompanied.
   </i></p>
 <img alt="teacher" title="teacher page" src="public/history-teacher.png" width="80%" />
 
 <p>Professores e estudantes, o projeto está pulicado e pode ser acessado nos links abaixo.
 <br/><i>Teachers and students, the project is published and can be accessed at the links below.</i>
 <br/>Você pode acessar a página do aluno clicando <a href="https://historias-aleatorias.herokuapp.com/">aqui</a>.
-  <br/>You can access the student's page clicking <a href="https://historias-aleatorias.herokuapp.com/">here</a>.
+  <br/><i>You can access the student's page clicking <a href="https://historias-aleatorias.herokuapp.com/">here</a></i>.
 <br/>Você pode acessar a página do professor clicando <a href="https://historias-aleatorias.herokuapp.com/teacher">aqui</a>.
-  <br/>You can access the teacher's page clicking <a href="https://historias-aleatorias.herokuapp.com/">here</a>.
+  <br/><i>You can access the teacher's page clicking <a href="https://historias-aleatorias.herokuapp.com/">here</a></i>.
 </p>
 
 
