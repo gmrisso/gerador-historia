@@ -14,9 +14,13 @@ export default class Main extends Component{
 		}; 
 		
 	componentDidMount(){
+
+		let classroom = this.props.match.params.id;
 		
-		let classroom = Math.floor((Math.random() * 8999)+1000);
-		
+		if (classroom == null) {
+			classroom = Math.floor((Math.random() * 8999)+1000);
+		}
+				
 		this.setState({classroom});
 		
 		socket.emit('create-room',classroom);
